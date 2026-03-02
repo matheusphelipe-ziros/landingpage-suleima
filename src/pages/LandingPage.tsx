@@ -31,7 +31,7 @@ export default function LandingPage() {
   return (
     <div className="bg-[#ececea] min-h-screen pt-0 pb-0 text-[#2f2321]">
       <main className="w-full px-0 space-y-0">
-        <section className="relative min-h-[440px] md:min-h-[760px] rounded-t-none rounded-b-[24px] md:rounded-b-[38px] overflow-hidden border border-[#b5ab9e]/60 border-t-0">
+        <section className="relative min-h-[440px] md:min-h-[760px] rounded-t-none rounded-b-[24px] md:rounded-b-[38px] overflow-hidden border-0">
           <img
             src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=2200&q=80"
             alt="Hero"
