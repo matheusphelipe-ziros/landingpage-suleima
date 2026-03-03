@@ -11,6 +11,11 @@ import imagemSu1 from '../assets/imagensSuleima/imagemSu1.jpg';
 import imagemSu2 from '../assets/imagensSuleima/imagemSu2.jpg';
 import imagemSu3 from '../assets/imagensSuleima/imagemSu3.jpg';
 import imagemSu4 from '../assets/imagensSuleima/imagemSu4.jpg';
+import imagemG from '../assets/imagensGluteo/imagemG.jpg';
+import imagemG2 from '../assets/imagensGluteo/imagemG2.jpg';
+import imagemG3 from '../assets/imagensGluteo/imagemG3.jpg';
+import imagemG4 from '../assets/imagensGluteo/imagemG4.jpg';
+import imagemG5 from '../assets/imagensGluteo/imagemG5.jpg';
 
 const galleryImages = [
   imagemSu1,
@@ -43,13 +48,13 @@ export default function LandingPage() {
   return (
     <div className="bg-[#ececea] min-h-screen pt-0 pb-0 text-[#2f2321]">
       <main className="w-full px-0 space-y-0">
-        <section className="relative min-h-[440px] md:min-h-[760px] rounded-t-none rounded-b-[24px] md:rounded-b-[38px] overflow-hidden border-0">
+        <section className="relative min-h-[460px] md:min-h-[780px] rounded-t-none rounded-b-[24px] md:rounded-b-[38px] overflow-hidden border-0">
           <img
             src={imagemSu3}
             alt="Suleima com equipamento"
-            className="absolute inset-0 w-full h-full object-cover object-[62%_18%] md:object-[58%_18%]"
+            className="absolute inset-0 w-full h-full object-cover object-[62%_18%] md:object-[72%_18%] lg:object-[76%_18%]"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(43,28,17,0.58),rgba(96,63,32,0.3),rgba(54,34,18,0.5))]" />
+          <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(24,15,10,0.78)_0%,rgba(43,28,17,0.55)_36%,rgba(60,39,26,0.22)_72%,rgba(60,39,26,0.12)_100%)]" />
           <svg className="absolute inset-0 w-full h-full opacity-35" viewBox="0 0 1400 760" fill="none">
             <path d="M120 550C380 410 620 620 910 510C1100 440 1280 450 1460 520" stroke="#d3c9b8" strokeWidth="1.2" />
             <path d="M70 620C300 500 520 670 820 640C1060 620 1270 660 1490 740" stroke="#d3c9b8" strokeWidth="1.2" />
@@ -64,6 +69,7 @@ export default function LandingPage() {
             <nav className="hidden md:flex items-center gap-8 text-[10px] tracking-[0.12em] uppercase">
               <a href="#about">Sobre</a>
               <a href="#services">Serviços</a>
+              <a href="#gluteo-contour">Método CONTOUR</a>
               <a href="#subscription">Protocolos</a>
               <a href="#gallery">Galeria</a>
               <a href="#contacts">Contato</a>
@@ -78,12 +84,14 @@ export default function LandingPage() {
           </header>
 
           <div className="relative z-10 h-full px-4 md:px-10 pb-8 md:pb-12 flex flex-col justify-end text-white">
-            <h1 className="leading-[0.88] font-medium max-w-[960px]" style={{ fontFamily: 'Inter, sans-serif', fontSize: 'clamp(3.2rem,7.6vw,6.8rem)' }}>
-              <span className="block">alta tecnologia</span>
-              <span className="block md:pl-[26%]">em estética corporal</span>
-              <span className="block">e facial em Salto.</span>
-            </h1>
-            <div className="ml-auto max-w-[350px] mt-4 text-[12px] md:text-[16px]" style={{ fontFamily: 'Inter, sans-serif', fontWeight: 300 }}>
+            <div className="w-fit max-w-[760px] rounded-[22px] bg-black/18 px-4 py-4 md:px-7 md:py-6 backdrop-blur-[1px]">
+              <h1 className="leading-[0.92] font-medium max-w-[640px]" style={{ fontFamily: 'Inter, sans-serif', fontSize: 'clamp(2.35rem,5.9vw,5.4rem)' }}>
+                <span className="block">alta tecnologia</span>
+                <span className="block md:pl-[10%]">em estética corporal</span>
+                <span className="block">e facial em Salto.</span>
+              </h1>
+            </div>
+            <div className="mt-4 max-w-[380px] md:max-w-[420px] md:ml-auto rounded-[18px] bg-black/22 px-4 py-3 text-[12px] md:text-[16px] backdrop-blur-[1px]" style={{ fontFamily: 'Inter, sans-serif', fontWeight: 300 }}>
               <p className="leading-relaxed">
                 Protocolos personalizados para modelagem corporal, rejuvenescimento e valorização da sua beleza natural.
               </p>
@@ -114,20 +122,20 @@ export default function LandingPage() {
             <h2 className="text-center leading-[1.08] mb-8 md:mb-10" style={{ fontFamily: 'Playfair Display, serif', fontSize: 'clamp(2rem,4.5vw,4.3rem)' }}>
               sobre a suleima e a clínica.
               <br />
-              especialista em estética avançada
+              estética avançada com estratégia
               <br />
-              com estrutura premium em Salto.
+              e cuidado personalizado em Salto.
             </h2>
 
             <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
               <div className="space-y-5 text-[14px] md:text-[15px] leading-relaxed text-[#2f2321]" style={{ fontFamily: 'Inter, sans-serif' }}>
                 <p>
-                  Suleima é especialista em estética corporal modeladora e tratamentos faciais, atuando com protocolos modernos,
-                  tecnologia de ponta e acompanhamento individualizado.
+                  Suleima atua com estética corporal modeladora e tratamentos faciais, unindo experiência prática,
+                  avaliação criteriosa e protocolos personalizados para cada objetivo.
                 </p>
                 <p>
-                  A clínica foi planejada para oferecer atendimento reservado, conforto e segurança, com equipamentos profissionais
-                  e foco em resultado progressivo e natural.
+                  A clínica foi planejada para oferecer atendimento reservado, tecnologia profissional e conforto em cada etapa,
+                  com foco em resultados progressivos, harmoniosos e naturais.
                 </p>
                 <ul className="grid gap-2 text-[13px] md:text-[14px]">
                   <li>✔ Atendimento exclusivo e personalizado</li>
@@ -171,41 +179,66 @@ export default function LandingPage() {
             <path d="M-20 250C170 110 340 180 530 280C700 370 860 290 1090 410" stroke="#b3aa9c" strokeWidth="1.1" />
             <path d="M740 40C650 120 650 210 700 300C770 410 930 430 1170 520" stroke="#b9b1a2" strokeWidth="1.1" />
           </svg>
-          <div className="relative z-10 grid grid-cols-2 md:grid-cols-12 gap-y-10 md:gap-y-0 md:gap-x-6">
-            <div className="col-span-2 md:col-span-4">
-              <h3 className="leading-none mb-7" style={{ fontFamily: 'Playfair Display, serif' }}>
-                <span className="block text-5xl md:text-7xl">tecnologia</span>
-                <span className="block text-5xl md:text-7xl pl-10 md:pl-14 -mt-1">de ponta</span>
+          <div className="relative z-10 mx-auto max-w-6xl grid gap-10 md:grid-cols-12 md:gap-8">
+            <div className="md:col-span-5">
+              <h3 className="leading-[0.95]" style={{ fontFamily: 'Playfair Display, serif' }}>
+                <span className="block text-4xl md:text-6xl">tecnologia de ponta</span>
               </h3>
-              <h4 className="leading-none" style={{ fontFamily: 'Playfair Display, serif' }}>
-                <span className="block text-4xl md:text-5xl">estrutura</span>
-                <span className="block text-4xl md:text-5xl pl-9 md:pl-14">premium</span>
+              <h4 className="leading-[0.95] mt-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+                <span className="block text-3xl md:text-5xl">estrutura premium</span>
               </h4>
-              <p className="max-w-[270px] mt-4 text-[12px] md:text-[14px] leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
+              <p className="mt-5 max-w-[560px] text-[14px] md:text-[15px] leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
                 Equipamentos modernos e reconhecidos no mercado estético para garantir segurança, conforto e eficácia em cada sessão.
               </p>
             </div>
 
-            <div className="col-span-2 md:col-span-5 md:col-start-7">
-              <h4 className="text-5xl md:text-6xl leading-[0.9]" style={{ fontFamily: 'Playfair Display, serif' }}>
-                resultados
-                <br />
-                superiores
+            <div className="md:col-span-6 md:col-start-7">
+              <h4 className="text-4xl md:text-6xl leading-[0.95]" style={{ fontFamily: 'Playfair Display, serif' }}>
+                resultados superiores
               </h4>
-              <p className="mt-4 max-w-[390px] text-[12px] md:text-[14px] leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
-                Nosso espaço foi planejado para oferecer atendimento reservado, acolhimento e uma experiência de alto padrão.
+              <p className="mt-4 max-w-[560px] text-[14px] md:text-[15px] leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
+                Nosso espaço foi pensado para proporcionar atendimento reservado, acolhimento e uma experiência de alto padrão do início ao fim.
               </p>
 
-              <h4 className="text-5xl md:text-6xl leading-none mt-8 md:mt-10" style={{ fontFamily: 'Playfair Display, serif' }}>
-                diferenciais
-                <br />
-                reais
+              <h4 className="text-4xl md:text-6xl leading-[0.95] mt-9" style={{ fontFamily: 'Playfair Display, serif' }}>
+                diferenciais reais
               </h4>
-              <ul className="mt-4 text-[12px] md:text-[14px] space-y-2" style={{ fontFamily: 'Inter, sans-serif' }}>
-                <li>➤ atendimento exclusivo</li>
-                <li>➤ equipamentos profissionais</li>
-                <li>➤ foco em resultado progressivo</li>
+              <ul className="mt-4 text-[14px] md:text-[15px] space-y-2" style={{ fontFamily: 'Inter, sans-serif' }}>
+                <li>➤ atendimento exclusivo e próximo</li>
+                <li>➤ tecnologia profissional com segurança</li>
+                <li>➤ protocolos com foco em resultado visível</li>
               </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="gluteo-contour" className="relative rounded-none overflow-hidden bg-[#ececea] px-4 md:px-16 py-12 md:py-16">
+          <div className="mx-auto max-w-6xl">
+            <p className="text-[11px] uppercase tracking-[0.18em] text-[#6f625a]" style={{ fontFamily: 'Inter, sans-serif' }}>
+              Destaque exclusivo
+            </p>
+            <h2 className="mt-2 text-4xl md:text-6xl leading-[0.95]" style={{ fontFamily: 'Playfair Display, serif' }}>
+              Método Glúteos CONTOUR
+            </h2>
+            <p className="mt-4 max-w-3xl text-[14px] md:text-[16px] leading-relaxed text-[#4a3d37]" style={{ fontFamily: 'Inter, sans-serif' }}>
+              Técnica de harmonização glútea com protocolo personalizado para melhorar contorno, firmeza e proporção, respeitando a estrutura corporal de cada cliente.
+            </p>
+
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-4">
+              {[imagemG4, imagemG5, imagemG3, imagemG2, imagemG].map((img, i) => (
+                <div key={i} className="overflow-hidden rounded-[22px] bg-[#d8d1c2]">
+                  <img src={img} alt={`Resultado Método Glúteos CONTOUR ${i + 1}`} className="h-[170px] w-full object-cover md:h-[220px]" />
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a href={sistemaUrl} className="bg-[#3c2922] px-5 py-2.5 text-[10px] uppercase tracking-[0.1em] text-white">
+                Agendar avaliação do CONTOUR
+              </a>
+              <a href="#contacts" className="border border-[#3c2922]/45 px-5 py-2.5 text-[10px] uppercase tracking-[0.1em] text-[#3c2922]">
+                Falar com a clínica
+              </a>
             </div>
           </div>
         </section>
