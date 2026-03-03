@@ -45,9 +45,9 @@ export default function LandingPage() {
       <main className="w-full px-0 space-y-0">
         <section className="relative min-h-[440px] md:min-h-[760px] rounded-t-none rounded-b-[24px] md:rounded-b-[38px] overflow-hidden border-0">
           <img
-            src={imagemSu2}
-            alt="Suleima com equipamento estético"
-            className="absolute inset-0 w-full h-full object-cover"
+            src={imagemSu3}
+            alt="Suleima com equipamento"
+            className="absolute inset-0 w-full h-full object-cover object-[62%_18%] md:object-[58%_18%]"
           />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(43,28,17,0.58),rgba(96,63,32,0.3),rgba(54,34,18,0.5))]" />
           <svg className="absolute inset-0 w-full h-full opacity-35" viewBox="0 0 1400 760" fill="none">
@@ -70,7 +70,7 @@ export default function LandingPage() {
             </nav>
 
             <div className="flex items-center gap-4 text-[10px]">
-              <span className="hidden sm:block">+55 (11) 99999-9999</span>
+              <span className="hidden sm:block">+55 (11) 95867-1658</span>
               <a href={sistemaUrl} className="border border-white/60 px-3 py-2 uppercase tracking-[0.1em]">
                 Agendar
               </a>
@@ -94,102 +94,74 @@ export default function LandingPage() {
                 <a href="#services" className="border-b border-white/70 pb-1">
                   Conhecer tratamentos <span aria-hidden>→</span>
                 </a>
+                <a href="#about" className="border-b border-white/70 pb-1">
+                  Ver mais sobre <span aria-hidden>→</span>
+                </a>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="about" className="relative rounded-none overflow-hidden bg-[#dddacf] px-4 md:px-16 py-12 md:py-16">
-          <div className="absolute left-1/2 -translate-x-1/2 top-[10%] w-[108%] h-[86%] bg-[#d2cec2] rounded-full" />
-          <svg className="absolute inset-0 w-full h-full opacity-55" viewBox="0 0 1200 1200" fill="none">
+        <section id="about" className="relative overflow-hidden bg-[#dddacf] px-4 py-12 md:px-16 md:py-16">
+          <div className="absolute left-1/2 top-[8%] h-[84%] w-[108%] -translate-x-1/2 rounded-full bg-[#d2cec2]" />
+          <svg className="absolute inset-0 h-full w-full opacity-55" viewBox="0 0 1200 1200" fill="none">
             <path d="M-80 470C160 300 320 390 520 560C710 730 930 680 1230 760" stroke="#b5ac9d" strokeWidth="1.1" />
             <path d="M-20 930C200 760 390 850 620 980C840 1110 1030 1050 1210 1140" stroke="#bdb4a6" strokeWidth="1.1" />
             <path d="M760 180C860 150 960 220 1010 340C1060 460 1030 600 940 700" stroke="#beb6a7" strokeWidth="1.1" />
           </svg>
 
-          <div className="relative z-10">
-            <h2 className="text-center leading-[1.08] mb-10 md:mb-12" style={{ fontFamily: 'Playfair Display, serif', fontSize: 'clamp(2rem,4.5vw,4.3rem)' }}>
-              sobre a suleima.
+          <div className="relative z-10 mx-auto max-w-6xl">
+            <h2 className="text-center leading-[1.08] mb-8 md:mb-10" style={{ fontFamily: 'Playfair Display, serif', fontSize: 'clamp(2rem,4.5vw,4.3rem)' }}>
+              sobre a suleima e a clínica.
               <br />
-              especialista em estética avançada,
+              especialista em estética avançada
               <br />
-              corporal e facial.
+              com estrutura premium em Salto.
             </h2>
 
-            <div className="md:hidden space-y-5">
-              <p className="text-[14px] leading-relaxed" style={{ fontFamily: 'Inter, sans-serif', fontWeight: 300 }}>
-                Suleima é especialista em estética corporal modeladora e tratamentos faciais, atuando com protocolos modernos e tecnologia de ponta.
-              </p>
-
-              <div className="relative mx-auto w-[250px] h-[380px] rounded-[120px] overflow-hidden">
-                <img src={imagemSu2} alt="Suleima com equipamento" className="w-full h-full object-cover" />
-              </div>
-
-              <div className="grid grid-cols-2 gap-3">
-                <div className="h-[180px] rounded-[90px] overflow-hidden">
-                  <img src={imagemSu3} alt="Suleima segurando aplicador" className="w-full h-full object-cover" />
-                </div>
-                <div className="h-[180px] rounded-[90px] overflow-hidden">
-                  <img src={imagemSu1} alt="Suleima apontando para o logo" className="w-full h-full object-cover" />
-                </div>
-              </div>
-
-              <p className="text-[14px] leading-relaxed" style={{ fontFamily: 'Inter, sans-serif', fontWeight: 300 }}>
-                Cada cliente recebe uma avaliação individualizada, garantindo segurança, estratégia personalizada e resultados progressivos.
-              </p>
-              <p className="text-[14px] leading-relaxed" style={{ fontFamily: 'Inter, sans-serif', fontWeight: 300 }}>
-                Atendimento exclusivo, equipamentos profissionais, protocolos estruturados e foco em resultado real.
-              </p>
-
-              <div className="grid grid-cols-3 gap-3">
-                <div className="h-[120px] rounded-[60px] overflow-hidden">
-                  <img src={imagem5} alt="Procedimento corporal" className="w-full h-full object-cover" />
-                </div>
-                <div className="h-[120px] rounded-[60px] overflow-hidden">
-                  <img src={imagem4} alt="Procedimento facial com luvas" className="w-full h-full object-cover" />
-                </div>
-                <div className="h-[120px] rounded-[60px] overflow-hidden">
-                  <img src={imagem6} alt="Aplicação facial" className="w-full h-full object-cover" />
+            <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+              <div className="space-y-5 text-[14px] md:text-[15px] leading-relaxed text-[#2f2321]" style={{ fontFamily: 'Inter, sans-serif' }}>
+                <p>
+                  Suleima é especialista em estética corporal modeladora e tratamentos faciais, atuando com protocolos modernos,
+                  tecnologia de ponta e acompanhamento individualizado.
+                </p>
+                <p>
+                  A clínica foi planejada para oferecer atendimento reservado, conforto e segurança, com equipamentos profissionais
+                  e foco em resultado progressivo e natural.
+                </p>
+                <ul className="grid gap-2 text-[13px] md:text-[14px]">
+                  <li>✔ Atendimento exclusivo e personalizado</li>
+                  <li>✔ Estrutura moderna com tecnologia avançada</li>
+                  <li>✔ Protocolos corporais e faciais estratégicos</li>
+                  <li>✔ Cuidado humanizado em cada etapa</li>
+                </ul>
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <a href="#services" className="bg-[#3c2922] px-4 py-2 text-[10px] uppercase tracking-[0.1em] text-white">
+                    Ver tratamentos
+                  </a>
+                  <a href={sistemaUrl} className="border border-[#3c2922]/50 px-4 py-2 text-[10px] uppercase tracking-[0.1em] text-[#3c2922]">
+                    Agendar avaliação
+                  </a>
                 </div>
               </div>
-            </div>
 
-            <div className="hidden md:block relative min-h-[1020px]">
-              <p className="absolute left-0 md:left-4 top-36 md:top-48 max-w-[250px] text-[11px] md:text-[14px] leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
-                Suleima é especialista em estética corporal modeladora e tratamentos faciais, com protocolos modernos e tecnologia de ponta.
-              </p>
-
-              <div className="absolute left-1/2 -translate-x-1/2 top-52 md:top-40 w-[220px] h-[330px] md:w-[390px] md:h-[610px] rounded-[100px] md:rounded-[210px] overflow-hidden">
-                <img src={imagemSu2} alt="Suleima com equipamento" className="w-full h-full object-cover" />
+              <div className="grid grid-cols-2 gap-3 md:gap-4">
+                <div className="row-span-2 h-[330px] md:h-[470px] rounded-[120px] md:rounded-[180px] overflow-hidden">
+                  <img src={imagemSu2} alt="Suleima com equipamento" className="h-full w-full object-cover object-[50%_32%]" />
+                </div>
+                <div className="h-[160px] md:h-[225px] rounded-[72px] md:rounded-[110px] overflow-hidden">
+                  <img src={imagemSu1} alt="Suleima na clínica" className="h-full w-full object-cover object-[72%_30%]" />
+                </div>
+                <div className="h-[160px] md:h-[225px] rounded-[72px] md:rounded-[110px] overflow-hidden">
+                  <img src={imagem3} alt="Clientes na clínica" className="h-full w-full object-cover object-[52%_38%]" />
+                </div>
+                <div className="h-[135px] md:h-[190px] rounded-[58px] md:rounded-[90px] overflow-hidden">
+                  <img src={imagem4} alt="Procedimento facial" className="h-full w-full object-cover object-[48%_34%]" />
+                </div>
+                <div className="h-[135px] md:h-[190px] rounded-[58px] md:rounded-[90px] overflow-hidden">
+                  <img src={imagem5} alt="Procedimento corporal" className="h-full w-full object-cover object-[52%_34%]" />
+                </div>
               </div>
-
-              <div className="absolute right-0 md:right-2 top-20 md:top-18 w-[130px] h-[240px] md:w-[235px] md:h-[390px] rounded-[76px] md:rounded-[130px] overflow-hidden">
-                <img src={imagemSu1} alt="Suleima apontando para o logo" className="w-full h-full object-cover" />
-              </div>
-
-              <div className="absolute left-5 md:left-12 top-[470px] md:top-[560px] w-[110px] h-[190px] md:w-[175px] md:h-[285px] rounded-[58px] md:rounded-[95px] overflow-hidden">
-                <img src={imagemSu3} alt="Suleima segurando aplicador" className="w-full h-full object-cover" />
-              </div>
-
-              <div className="absolute right-8 md:right-28 top-[620px] md:top-[690px] w-[88px] h-[136px] md:w-[142px] md:h-[205px] rounded-[44px] md:rounded-[72px] overflow-hidden">
-                <img src={imagem5} alt="Procedimento corporal" className="w-full h-full object-cover" />
-              </div>
-
-              <div className="absolute left-[34%] md:left-[30%] top-[780px] md:top-[868px] w-[72px] h-[110px] md:w-[115px] md:h-[170px] rounded-[38px] md:rounded-[80px] overflow-hidden">
-                <img src={imagem4} alt="Procedimento facial com luvas" className="w-full h-full object-cover" />
-              </div>
-
-              <div className="absolute left-1/2 -translate-x-1/2 top-[700px] md:top-[860px] w-[56px] h-[86px] md:w-[90px] md:h-[132px] rounded-[30px] md:rounded-[50px] overflow-hidden">
-                <img src={imagem6} alt="Aplicação facial" className="w-full h-full object-cover" />
-              </div>
- 
-              <p className="absolute right-0 md:right-2 top-[515px] md:top-[605px] max-w-[240px] md:max-w-[360px] text-[11px] md:text-[14px] leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
-                Cada cliente recebe uma avaliação individualizada, garantindo segurança, estratégia personalizada e resultados progressivos.
-              </p>
-
-              <p className="absolute left-[35%] md:left-[40%] top-[690px] md:top-[800px] max-w-[220px] md:max-w-[350px] text-[11px] md:text-[14px] leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
-                Atendimento exclusivo, equipamentos profissionais, protocolos estruturados e foco em resultado real.
-              </p>
             </div>
           </div>
         </section>
@@ -244,16 +216,19 @@ export default function LandingPage() {
           </h2>
 
           {[
-            { title: 'corporal', image: imagem5 },
-            { title: 'facial', image: imagem4 },
-            { title: 'experiência', image: imagem3 },
+            { title: 'corporal', image: imagemSu4, position: 'object-[52%_40%] md:object-[50%_38%]' },
+            { title: 'facial', image: imagem7, position: 'object-[48%_36%] md:object-[52%_32%]' },
+            { title: 'experiência', image: imagem3, position: 'object-[50%_32%] md:object-[50%_30%]' },
           ].map((item) => (
-            <article key={item.title} className="relative h-[170px] md:h-[265px] border-t border-white/65 first:border-t-0">
-              <img src={item.image} alt={item.title} className="absolute inset-0 w-full h-full object-cover" />
+            <article key={item.title} className="relative h-[200px] md:h-[300px] border-t border-white/65 first:border-t-0">
+              <img src={item.image} alt={item.title} className={`absolute inset-0 w-full h-full object-cover ${item.position}`} />
               <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/10" />
               <div className="relative z-10 h-full flex flex-col justify-center pl-8 md:pl-16">
                 <h3 className="text-white text-6xl md:text-7xl leading-none" style={{ fontFamily: 'Playfair Display, serif' }}>{item.title}</h3>
-                <a href={sistemaUrl} className="mt-4 w-max bg-white text-[#2f2321] px-4 py-2 text-[10px] uppercase tracking-[0.12em]">Agendar avaliação</a>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <a href={sistemaUrl} className="w-max bg-white text-[#2f2321] px-4 py-2 text-[10px] uppercase tracking-[0.12em]">Agendar avaliação</a>
+                  <a href="#about" className="w-max border border-white text-white px-4 py-2 text-[10px] uppercase tracking-[0.12em]">Ver mais sobre</a>
+                </div>
               </div>
             </article>
           ))}
@@ -343,15 +318,22 @@ export default function LandingPage() {
             </div>
             <div>
               <p className="text-4xl md:text-6xl leading-[0.92]" style={{ fontFamily: 'Playfair Display, serif' }}>
-                avaliação
+                rua América
                 <br />
-                personalizada
+                1321 - Salto
               </p>
               <a href={sistemaUrl} className="mt-5 inline-block bg-white text-[#3f3828] px-3.5 py-1.5 text-[9px] md:text-[10px] uppercase tracking-[0.08em]">Agendar agora</a>
             </div>
             <div className="md:text-right">
-              <a href="tel:+5511999999999" className="text-4xl md:text-7xl leading-none block" style={{ fontFamily: 'Playfair Display, serif' }}>
-                +55 (11) 99999-9999
+              <a href="tel:+5511958671658" className="text-4xl md:text-7xl leading-none block" style={{ fontFamily: 'Playfair Display, serif' }}>
+                +55 (11) 95867-1658
+              </a>
+              <a
+                href="mailto:suleimaestetica@icloud.com"
+                className="mt-4 block text-[12px] md:text-sm text-white/90 underline underline-offset-4"
+                style={{ fontFamily: 'Inter, sans-serif' }}
+              >
+                suleimaestetica@icloud.com
               </a>
               <a
                 href={sistemaUrl}
