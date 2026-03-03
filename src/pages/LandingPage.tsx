@@ -17,17 +17,39 @@ import imagemG3 from '../assets/imagensGluteo/imagemG3.jpg';
 import imagemG4 from '../assets/imagensGluteo/imagemG4.jpg';
 import imagemG5 from '../assets/imagensGluteo/imagemG5.jpg';
 
-const galleryImages = [
-  imagemSu1,
-  imagemSu2,
-  imagemSu3,
-  imagemSu4,
-  imagem1,
-  imagem2,
-  imagem3,
-  imagem4,
-  imagem5,
-  imagem6,
+const instagramProfileUrl = 'https://www.instagram.com/suleimaestetica';
+
+const instagramPosts = [
+  {
+    url: 'https://www.instagram.com/suleimaestetica/reel/DPaRforjTnO/',
+    image: imagemSu3,
+    label: 'Reel de estética avançada',
+  },
+  {
+    url: 'https://www.instagram.com/suleimaestetica/p/DP6OMaWDa1A/',
+    image: imagem3,
+    label: 'Post de rotina na clínica',
+  },
+  {
+    url: 'https://www.instagram.com/suleimaestetica/reel/DU_IOOOkeEA/',
+    image: imagem5,
+    label: 'Reel de procedimento corporal',
+  },
+  {
+    url: 'https://www.instagram.com/suleimaestetica/p/DLxQT2fxFtz/',
+    image: imagem7,
+    label: 'Post de cuidado facial',
+  },
+  {
+    url: 'https://www.instagram.com/suleimaestetica/reel/DVZbr2MEopr/',
+    image: imagemG4,
+    label: 'Reel Método Glúteos CONTOUR',
+  },
+  {
+    url: 'https://www.instagram.com/suleimaestetica/reel/DU53r6rDS8D/',
+    image: imagemG5,
+    label: 'Reel de harmonização glútea',
+  },
 ];
 
 export default function LandingPage() {
@@ -52,7 +74,7 @@ export default function LandingPage() {
           <img
             src={imagemSu3}
             alt="Suleima com equipamento"
-            className="absolute inset-0 w-full h-full object-cover object-[62%_18%] md:object-[72%_18%] lg:object-[76%_18%]"
+            className="absolute inset-0 w-full h-full object-cover object-[62%_18%] md:object-[84%_20%] lg:object-[87%_20%]"
           />
           <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(24,15,10,0.78)_0%,rgba(43,28,17,0.55)_36%,rgba(60,39,26,0.22)_72%,rgba(60,39,26,0.12)_100%)]" />
           <svg className="absolute inset-0 w-full h-full opacity-35" viewBox="0 0 1400 760" fill="none">
@@ -84,10 +106,10 @@ export default function LandingPage() {
           </header>
 
           <div className="relative z-10 h-full px-4 md:px-10 pb-8 md:pb-12 flex flex-col justify-end text-white">
-            <div className="w-fit max-w-[760px] rounded-[22px] bg-black/18 px-4 py-4 md:px-7 md:py-6 backdrop-blur-[1px]">
-              <h1 className="leading-[0.92] font-medium max-w-[640px]" style={{ fontFamily: 'Inter, sans-serif', fontSize: 'clamp(2.35rem,5.9vw,5.4rem)' }}>
-                <span className="block">alta tecnologia</span>
-                <span className="block md:pl-[10%]">em estética corporal</span>
+            <div className="w-fit max-w-[760px] rounded-[22px] bg-black/26 px-4 py-4 md:px-7 md:py-6 backdrop-blur-[1px]">
+              <h1 className="leading-[0.95] font-medium max-w-[600px]" style={{ fontFamily: 'Inter, sans-serif', fontSize: 'clamp(1.95rem,8vw,4.8rem)' }}>
+                <span className="block">Alta tecnologia</span>
+                <span className="block md:pl-[6%]">em estética corporal</span>
                 <span className="block">e facial em Salto.</span>
               </h1>
             </div>
@@ -120,9 +142,9 @@ export default function LandingPage() {
 
           <div className="relative z-10 mx-auto max-w-6xl">
             <h2 className="text-center leading-[1.08] mb-8 md:mb-10" style={{ fontFamily: 'Playfair Display, serif', fontSize: 'clamp(2rem,4.5vw,4.3rem)' }}>
-              sobre a suleima e a clínica.
+              Sobre a Suleima e a clínica.
               <br />
-              estética avançada com estratégia
+              Estética avançada com estratégia
               <br />
               e cuidado personalizado em Salto.
             </h2>
@@ -182,10 +204,10 @@ export default function LandingPage() {
           <div className="relative z-10 mx-auto max-w-6xl grid gap-10 md:grid-cols-12 md:gap-8">
             <div className="md:col-span-5">
               <h3 className="leading-[0.95]" style={{ fontFamily: 'Playfair Display, serif' }}>
-                <span className="block text-4xl md:text-6xl">tecnologia de ponta</span>
+                <span className="block text-3xl md:text-6xl">Tecnologia de ponta</span>
               </h3>
               <h4 className="leading-[0.95] mt-6" style={{ fontFamily: 'Playfair Display, serif' }}>
-                <span className="block text-3xl md:text-5xl">estrutura premium</span>
+                <span className="block text-3xl md:text-5xl">Estrutura premium</span>
               </h4>
               <p className="mt-5 max-w-[560px] text-[14px] md:text-[15px] leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
                 Equipamentos modernos e reconhecidos no mercado estético para garantir segurança, conforto e eficácia em cada sessão.
@@ -193,15 +215,15 @@ export default function LandingPage() {
             </div>
 
             <div className="md:col-span-6 md:col-start-7">
-              <h4 className="text-4xl md:text-6xl leading-[0.95]" style={{ fontFamily: 'Playfair Display, serif' }}>
-                resultados superiores
+              <h4 className="text-3xl md:text-6xl leading-[0.95]" style={{ fontFamily: 'Playfair Display, serif' }}>
+                Resultados superiores
               </h4>
               <p className="mt-4 max-w-[560px] text-[14px] md:text-[15px] leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
                 Nosso espaço foi pensado para proporcionar atendimento reservado, acolhimento e uma experiência de alto padrão do início ao fim.
               </p>
 
-              <h4 className="text-4xl md:text-6xl leading-[0.95] mt-9" style={{ fontFamily: 'Playfair Display, serif' }}>
-                diferenciais reais
+              <h4 className="text-3xl md:text-6xl leading-[0.95] mt-9" style={{ fontFamily: 'Playfair Display, serif' }}>
+                Diferenciais reais
               </h4>
               <ul className="mt-4 text-[14px] md:text-[15px] space-y-2" style={{ fontFamily: 'Inter, sans-serif' }}>
                 <li>➤ atendimento exclusivo e próximo</li>
@@ -324,13 +346,52 @@ export default function LandingPage() {
           </svg>
           <div className="relative z-10">
             <div className="flex items-center justify-between mb-5 md:mb-8">
-              <h2 className="text-6xl md:text-8xl leading-none" style={{ fontFamily: 'Playfair Display, serif' }}>galeria</h2>
-              <a href={sistemaUrl} className="bg-[#3c2922] text-white px-4 py-2 text-[10px] md:text-[11px] uppercase tracking-[0.1em]">Agendar</a>
+              <div>
+                <h2 className="text-6xl md:text-8xl leading-none" style={{ fontFamily: 'Playfair Display, serif' }}>instagram</h2>
+                <p className="mt-2 text-[12px] md:text-[14px]" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  @suleimaestetica
+                </p>
+              </div>
+              <a
+                href={instagramProfileUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-[#3c2922] text-white px-4 py-2 text-[10px] md:text-[11px] uppercase tracking-[0.1em]"
+              >
+                Ver perfil
+              </a>
             </div>
-            <div className="grid grid-cols-5 gap-1.5 md:gap-2">
-              {galleryImages.map((image, i) => (
-                <div key={i} className="aspect-square overflow-hidden">
-                  <img src={image} alt={`Galeria da clínica ${i + 1}`} className="w-full h-full object-cover" />
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-5">
+              {instagramPosts.map((post, i) => (
+                <div key={post.url} className="rounded-[18px] bg-[#ececea] border border-[#c8c0af] overflow-hidden">
+                  <div className="flex items-center gap-2 px-3 py-2 border-b border-[#d8d0bf]">
+                    <div className="h-7 w-7 rounded-full bg-[#3c2922] text-white text-[9px] grid place-items-center">SE</div>
+                    <a
+                      href={post.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-[11px] text-[#3c2922] underline underline-offset-4"
+                      style={{ fontFamily: 'Inter, sans-serif' }}
+                    >
+                      Ver post {i + 1} no Instagram
+                    </a>
+                  </div>
+                  <a href={post.url} target="_blank" rel="noreferrer" className="block aspect-[4/5] overflow-hidden">
+                    <img src={post.image} alt={post.label} className="h-full w-full object-cover" />
+                  </a>
+                  <div className="px-3 py-3">
+                    <p className="text-[12px] text-[#4a3d37]" style={{ fontFamily: 'Inter, sans-serif' }}>
+                      {post.label}
+                    </p>
+                    <a
+                      href={post.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-2 inline-block text-[10px] uppercase tracking-[0.1em] text-[#3c2922] border-b border-[#3c2922]/40 pb-1"
+                    >
+                      Abrir no Instagram →
+                    </a>
+                  </div>
                 </div>
               ))}
             </div>
